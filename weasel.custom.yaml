@@ -1,0 +1,42 @@
+patch:
+  show_notifications_when: appropriate  # 状态通知，适当，也可设为全开（always）全关（never）
+  style:
+    display_tray_icon: true        # 托盘图标
+    horizontal": false             # 横排候选
+    inline_preedit: true           # 内嵌编码
+    font_face: "方正隶变_GBK"      # 字体
+    font_point: 16                 # 字号
+    color_scheme: Aixtuz
+
+  preset_color_schemes:
+    Aixtuz:
+      name: "小清新"
+      author: "Aixtuz"
+      # 底色
+      border_color: 0xd5e8ee                  # 边框颜色
+      back_color: 0xe3f6fd                    # 面板底色
+      hilited_back_color: 0x4763FF            # 编码底色-高亮
+      # 拼音
+      text_color: 0x98a12a                    # 编码颜色
+      hilited_text_color: 0xffffff            # 编码颜色-高亮
+      comment_text_color: 0x4763FF            # 编码提示颜色
+      hilited_comment_text_color: 0xeeeeee    # 编码提示颜色-高亮
+      # 字词
+      candidate_text_color: 0x555555          # 候选字颜色
+      hilited_candidate_text_color: 0xffffff  # 候选字颜色-高亮
+      hilited_candidate_back_color: 0x98a12a  # 候选字背景-高亮
+
+  # app_options/XXX: {}                       # 中文模式
+  app_options/Everything.exe:                 # 英文模式
+    ascii_mode: true
+  app_options/sublime_text.exe:
+    ascii_mode: true
+
+
+
+
+
+
+
+
+
