@@ -4,7 +4,7 @@ patch:
     display_tray_icon: true        # 托盘图标
     horizontal": false             # 横排候选
     inline_preedit: true           # 内嵌编码
-    font_face: "方正隶变_GBK"      # 字体
+    font_face: "方正隶变_GBK"       # 字体
     font_point: 16                 # 字号
     color_scheme: Aixtuz
 

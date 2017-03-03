@@ -2,16 +2,17 @@ patch:
   menu:
     page_size: 7
   schema_list:
-  - schema: luna_pinyin_simp      # 朙月拼音 简化字
+  - schema: luna_pinyin_simp      # 全拼
   - schema: double_pinyin_flypy   # 小鶴雙拼
-
-  ascii_composer/good_old_caps_lock: true
+  
+  # false: capslock 键切换英文并输出小写
+  ascii_composer/good_old_caps_lock: false 
   ascii_composer/switch_key:
     Caps_Lock: clear
-    Control_L: clear
-    Control_R: clear
-    Shift_L: clear
-    Shift_R: clear
+    Control_L: noop
+    Control_R: noop
+    Shift_L: noop
+    Shift_R: noop
     
   switcher:
     abbreviate_options: true
