@@ -1,12 +1,12 @@
 patch:
   show_notifications_when: appropriate  # 状态通知，适当，也可设为全开（always）全关（never）
   style:
-    display_tray_icon: true        # 托盘图标
-    horizontal": false             # 横排候选
-    inline_preedit: true           # 内嵌编码
+    color_scheme: Aixtuz
     font_face: "方正隶变_GBK"       # 字体
     font_point: 16                 # 字号
-    color_scheme: Aixtuz
+    horizontal": false             # 横排候选
+    inline_preedit: true           # 内嵌编码
+    display_tray_icon: true        # 托盘图标
 
   preset_color_schemes:
     Aixtuz:
@@ -22,8 +22,9 @@ patch:
       comment_text_color: 0x4763FF            # 编码提示颜色
       hilited_comment_text_color: 0xeeeeee    # 编码提示颜色-高亮
       # 字词
-      candidate_text_color: 0x555555          # 候选字颜色
+      candidate_text_color: 0x444444          # 候选字颜色
       hilited_candidate_text_color: 0xffffff  # 候选字颜色-高亮
+      # 亮绿 98a12a  暗绿 8b8653
       hilited_candidate_back_color: 0x98a12a  # 候选字背景-高亮
 
   # app_options/XXX: {}                       # 中文模式
