@@ -71,6 +71,12 @@
 > 差别在于: postflight 是把数据文件生成在 `/Library/Input Methods/Squirrel.app/Contents/SharedSupport/` 
 > 后一种方法是把数据文件生成在 `~/Library/Rime/` 
 
+- 编译好的 App 替换
+  - 输入源里移除；
+  - Finder 替换 /Library/Input Methods/*；
+  - 右键打开提权；
+  - 重新部署；
+
 ## iRime
 
 - 直接导入配置, 繁转简, 基本可用;
