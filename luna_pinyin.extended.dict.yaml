@@ -43,12 +43,11 @@ use_preset_vocabulary: true
 
 import_tables:
   - luna_pinyin
-  - luna_pinyin.sgmain
   - luna_pinyin.hanyu
   - luna_pinyin.poetry
+  - luna_pinyin.sgmain
   - luna_pinyin.cn_en
   - luna_pinyin.emoji
-  - luna_pinyin.kaomoji
 ...
 
 一一列舉		1

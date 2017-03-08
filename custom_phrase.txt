@@ -18,3 +18,4 @@
 
 aixtuz@gmail.com	gmail	2
 aixtuz@icloud.com	iCloud	2
+github.com	github	2
