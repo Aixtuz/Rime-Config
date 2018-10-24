@@ -1,68 +1,20 @@
 patch:
-  show_notifications_when: appropriate    # 状态通知, 全开(always)全关(never)
+
+  show_notifications_when: appropriate        # 状态通知，适当，也可设为全开（always）全关（never）
+
   style:
-    color_scheme: Aixtuz                     # 选择主题
-    horizontal: true                         # 水平排列
-    font_point: 16                           # 候选字号
-    label_font_point: 14                     # 编号字号
-    inline_preedit: true                     # 内嵌编码(拼音)
-    candidate_format: "%c\u2005%@\u2005"     # 1/6 em 空格 U+2005 控制编号 %c 候选词 %@ 间距
+    color_scheme: google
+    horizontal: true
+    inline_preedit: true
+    candidate_format: "%c\u2005%@ \u2005"     # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+    font_face: "PingFangSC-Regular,HanaMinB"  # 候选词字体
+    font_point: 16                            # 候选文字大小
+    label_font_point: 14                      # 候选编号大小
+    corner_radius: 5                          # 候选条圆角
+    border_height: 0                          # 窗口边界高度，大于圆角半径才生效
+    border_width: 0                           # 窗口边界宽度，大于圆角半径才生效
 
-    # 边框宽高, 大于圆角半径才生效
-    corner_radius: 5                         # 候选条圆角
-    border_width: 6                          # 边框宽
-    border_height: 6                         # 边框高
-    
-
-  preset_color_schemes:
-
-    Apathy:
-      name: "冷漠 / Apathy"
-      author: "LIANG Hai "
-      
-      # 底色
-      border_color: 0xE0B693                             # 边框色
-      back_color: 0xFFFFFF                               # 面板底色
-      hilited_back_color: 0x4763FF                       # 编码底色-高亮
-      # 拼音
-      text_color: 0x424242                               # 编码颜色
-      hilited_text_color: 0x9e9e9e                       # 编码颜色-高亮(需内嵌编码)
-      comment_text_color: 0x999999                       # 编码提示颜色
-      hilited_comment_text_color: 0x9e9e9e               # 编码提示颜色-高亮
-      # 字词
-      font_face: "PingFangSC"                            # 候选字体
-      candidate_text_color: 0x000000                     # 候选字颜色
-      hilited_candidate_text_color: 0x000000             # 候选字颜色-高亮
-      hilited_candidate_back_color: 0xfff0e4             # 候选字背景-高亮
-      # 编号
-      label_font_face: "STHeitiSC"                       # 编号字体
-      label_color: 0x9e9e9e                              # 编号颜色
-      hilited_candidate_label_color: 0x9e9e9e            # 编号颜色-高亮
-
-    Aixtuz:
-      name: "小清新"
-      author: "Aixtuz"
-      # 底色
-      border_color: 0xd5e8ee                             # 边框颜色
-      back_color: 0xe3f6fd                               # 面板底色
-      hilited_back_color: 0x4763FF                       # 编码底色-高亮
-      # 拼音
-      text_color: 0x98a12a                               # 编码颜色
-      hilited_text_color: 0xffffff                       # 编码颜色-高亮
-      comment_text_color: 0x4763FF                       # 编码提示颜色
-      hilited_comment_text_color: 0xeeeeee               # 编码提示颜色-高亮
-      # 字词
-      font_face: "PingFangSC"                            # 候选字体
-      candidate_text_color: 0x444444                     # 候选字颜色
-      hilited_candidate_text_color: 0xffffff             # 候选字颜色-高亮
-      # 亮绿 98a12a  暗绿 8b8653
-      hilited_candidate_back_color: 0x98a12a             # 候选字背景-高亮 
-      # 编号
-      label_font_face: "STHeitiSC"                       # 编号字体
-      label_color: 0x4763FF                              # 编号颜色
-      hilited_candidate_label_color: 0xffffff            # 编号颜色-高亮
-
-  # app_options/XXX: {}  # 中文模式
+  # 英文模式
   app_options:
     com.apple.dt.Xcode:
       ascii_mode: true
@@ -70,5 +22,7 @@ patch:
       ascii_mode: true
     com.hicknhacksoftware.MacPass:
       ascii_mode: true
-
-    
+    com.runningwithcrayons.Alfred-3:
+      ascii_mode: true
+    com.tencent.wechat.devtools:
+      ascii_mode: true

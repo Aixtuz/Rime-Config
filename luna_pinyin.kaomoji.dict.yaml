@@ -6,10 +6,11 @@
 name: luna_pinyin.kaomoji
 version: "1.0"
 sort: origin
+use_preset_vocabulary: true
 ...
 
-w(ﾟДﾟ)w	aa
-┗|｀O′|┛ 嗷~~	ao
+w(ﾟДﾟ)w	aa	80%
+┗|｀O′|┛ 嗷~~	ao	80%
 ヾ(≧O≦)〃嗷~	ao
 (>▽<)	ao
 (ㄏ￣▽￣)ㄏbyeㄟ(￣▽￣ㄟ)	bai
@@ -128,7 +129,6 @@ o(￣ヘ￣o＃)	heng heng
 (；′⌒`)	heng heng
 Hi~ o(*￣▽￣*)ブ	ni hao
 ○( ＾皿＾)っHiahiahia…	hia hia
-(( へ(へ´∀`)へ	high
 ^O^	ho ho
 (❤´艸｀❤)	hua chi
 ～(　TロT)σ	huai ren
@@ -256,7 +256,7 @@ o(*////▽////*)q	shy
 ´･∀･)乂(･∀･｀	si ba
 ㄟ(≧◇≦)ㄏ	tai bang le
 ヽ(*。>Д<)o゜	tai ke pa le
-┑(￣Д ￣)┍	tan shou
+¯\_(ツ)_/¯	tan shou
 ε=ε=ε=┏(゜ロ゜;)┛	tao
 …（⊙＿⊙；）…	tao
 ヽ(ﾟ∀ﾟ*)ﾉ━━━ｩ♪	tao

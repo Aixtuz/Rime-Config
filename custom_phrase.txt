@@ -16,6 +16,10 @@
 #
 # no comment
 
-aixtuz@gmail.com	gmail	2
-aixtuz@icloud.com	iCloud	2
-github.com	github	2
+aixtuz@gmail.com	gmail	1
+aixtuz@icloud.com	iCloud	1
+又双叒叕	yyy
+⌘	cmd
+⌃	ctl
+⌥	opt
+⇧	shift

@@ -1,83 +1,52 @@
 # Rime 自用配置
 
-- 一直以来只是简单配置了 Rime 在使用，感谢 [scomper](https://medium.com/@scomper) 的文章: [「鼠鬚管」的调教笔记](https://medium.com/@scomper/%E9%BC%A0%E9%A0%88%E7%AE%A1-%E7%9A%84%E8%B0%83%E6%95%99%E7%AC%94%E8%AE%B0-3fdeb0e78814#.8d1na3s5q), 让我发现了更好的用法.
-- 按个人需求只保留了拼音简体 & 双拼, 并稍作个人习惯的修改, 有其他输入需求请访问 scomper 的 medium 下载原始配置.
-- 中英、全角、符号习惯快捷键切换，从输入法切换菜单中移除.
-- 确信自己拼写标准, 移除了模糊音.
-- Win 中字体习惯用方正隶变.
+- 一直以来只是简单配置了 Rime 在使用，感谢 [scomper](https://github.com/scomper) 的文章: [「鼠鬚管」的调教笔记](https://scomper.me/gtd/-shu-xu-guan-de-diao-jiao-bi-ji), 让我发现了更好的用法。
+- 按个人需求只保留了拼音简体 & 小鹤双拼, 并根据个人习惯稍作修改, 如有需求建议 参考 scomper 的[原始配置](https://github.com/scomper/Rime)。
+
+## 安装
+
+``` zsh
+brew cask install squirrel
+# brew install squirrel # 不是 Rime
+```
 
 ## 部署
 
-- 根据系统二选一的文件:
-    - Mac: Squirrel.custom
-    - Win: weasel.custom
-    - custom 配置样式 + 末尾配置默认英文的程序
-- 其他文件通用覆盖
-
-> Mac 留了两套主题(仿系统&绿色清新)
-
-- simp.custom & flypy.custom 中自定义符号表:
-
-    ```
-    symbols:
-    '/xx': [ 1, 2, 3 ]
-    // 默认符号表: symbols 文件中
-    ```
-
-- custom_phrase, 文本替换:完全匹配,编码不能有空格.
-
-## 遗憾
-
-- 中英混合词组扩展导致某些分词异常,可在 pinyin.extended 中注释 cn_en;
-
-    ```
-    // 词库
-    luna_pinyin.sgmain.dict.yaml，搜狗细胞词库
-    luna_pinyin.cn_en.dict.yaml，英文、中英文混合短语和名词
-    luna_pinyin.emoji.dict.yaml，表情符号
-    luna_pinyin.hanyu.dict.yaml，汉语大词典
-    luna_pinyin.kaomoji.dict.yaml，颜文字表情符号
-    luna_pinyin.poetry.dict.yaml，唐诗宋词、千家集、楚辞、诗经
-    ```
+- 覆盖用户设置进行部署；
+- Win 平台的 `weasel.custom.yaml` 参考 `squirrel.custom.yaml` 配置；
 
 ## 编译
 
-- 新版本，新特性：新版候选高亮可以填充满背景色了。
-- 感谢: [placeless](https://github.com/placeless)的文章: [我的鼠须管配置](http://placeless.net/2016/08/24/my-rime-squirrel-config.html)
+- 新版本，新特性：候选高亮可以充满背景色。
 
 - 自己编译新版本
 
-    ```shell
-    // 安装并启动 XCode，确认一下条款 (光有 Command Line Tool 是不行的)
-    brew install cmake git boost
+    ``` zsh
+    # dev tools:
+    brew install git
+    brew install cmake
+    # libraries:
+    brew install boost
+    # Repositories
     git clone --recursive https://github.com/rime/squirrel.git
-    cd squirrel
+    # cd squirrel
     make deps
     make
-    sudo make install
-    ```
-
-- 把编译好的 APP 留到下一次重装系统之后安装使用
-
-    ```shell
-    // 把编译好的 Squirrel.app 复制到 /Library/Input Methods 目录下：
-    cp -R YOUR_PATH/Squirrel.app "/Library/Input Methods"
-    // 然后跑一下 postflight 脚本即可：
-    sudo /Library/Input\ Methods/Squirrel.app/Contents/Resources/postflight
+    # build 中找到生成文件
     ```
 
 
-> 或者: 把保存的 Squirrel.app 复制到 `/Library/Input Methods` 下，注销重登入，将其加入输入法选单，「部署」即可。
-> 差别在于: postflight 是把数据文件生成在 `/Library/Input Methods/Squirrel.app/Contents/SharedSupport/` 
-> 后一种方法是把数据文件生成在 `~/Library/Rime/` 
+- 替换新版 App
+    1. 移除 Rime 输入法，并注销；
+    2. 替换 /Library/Input Methods/ 中的 App；
+    3. 运行 & 部署；
 
-- 编译好的 App 替换
-  - 输入源里移除；
-  - Finder 替换 /Library/Input Methods/*；
-  - 右键打开提权；
-  - 重新部署；
 
-## iRime
+## iOS
 
-- 直接导入配置, 繁转简, 基本可用;
-- GO!~
+- 早期在塞班和安卓上一直使用点讯/百度，优点是可以自定义布局和方案，安卓早期版本也很轻量，只是后来的体积和隐私都让人心生抵触。 
+- iOS 端使用过 iRime 和落格等，优点方面：iRime 配置和 Rime 通用，落格是细节亮眼，最终放弃的原因都在于纠错能力，移动端的小键盘实在是太容易点错了。
+- iOS 原生推出双拼以后，也曾尝试使用，只是由于习惯了小鹤方案并且原生双拼键盘布局比较奇怪，所以也放弃了。
+- 最终使用至今的是 Google 的 Gboard，感受中的纠错能力最好，日常聊天不在意选错字的话，甚至可以闭眼打字。
+- iOS 中所有第三方都存在同样的缺点：系统某些情境使用受限，所以还是非常期望原生可以调整下布局 & 支持小鹤方案，当然能自定义方案就更好了。
+
