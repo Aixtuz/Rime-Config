@@ -1,16 +1,15 @@
 patch:
-  menu:
-    page_size: 8
   schema_list:
-  - schema: luna_pinyin_simp      # 朙月拼音 简化字
-  - schema: double_pinyin_flypy   # 小鹤雙拼
-  #  - schema: wubi_pinyin           # 五笔拼音混合輸入
+    - schema: double_pinyin_flypy    # 小鹤雙拼
+    - schema: luna_pinyin_simp       # 朙月拼音 简化字
+
+  ascii_composer:
+    good_old_caps_lock: false        # capslock 切换中英
+    switch_key:                      # commit、commit_code、noop、clear
+      Caps_Lock: clear
+      Control_L: noop
+      Control_R: noop
+      Shift_L: noop
+      Shift_R: noop
 
 
-#  ascii_composer/good_old_caps_lock: false # capslock 键切换英文并输出小写
-#  ascii_composer/switch_key:
-#    Caps_Lock: commit_code
-#    Control_L: noop
-#    Control_R: noop
-#    Shift_L: noop
-#    Shift_R: noop
