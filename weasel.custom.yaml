@@ -1,14 +1,14 @@
 patch:
-  show_notifications_when: appropriate
+  show_notifications_when: appropriate    # 通知：全开（always）全关（never）
   style:
-    color_scheme: google
-    candidate_format: " %c %@ "
-    corner_radius: 4
-    font_face: "PingFangSC-Regular, 宋体"
-    font_point: 14
-    horizontal: true
-    inline_preedit: true
-    label_font_point: 14
+    color_scheme: google                  # 主题
+    horizontal: true                      # 水平
+    inline_preedit: true                  # 内嵌
+    candidate_format: " %c %@ "           # 编号%c 字词%@
+    font_face: "PingFangSC-Regular, 宋体"  # 字体
+    font_point: 14                        # 字号
+    label_font_point: 14                  # 编号
+    corner_radius: 4                      # 圆角
     layout: {candidate_spacing: 20, hilite_padding: 10, margin_x: 12, margin_y: 12}
   app_options:
     "Everything/ascii_mode": true
