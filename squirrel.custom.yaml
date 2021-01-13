@@ -6,7 +6,7 @@ patch:
     inline_preedit: true                  # 内嵌
     candidate_format: " %c %@ "           # 编号%c 字词%@
     font_face: "PingFangSC-Regular, 宋体"  # 字体
-    font_point: 16                        # 字词
+    font_point: 16                        # 字号
     label_font_point: 14                  # 编号
     corner_radius: 4                      # 圆角
   app_options:
