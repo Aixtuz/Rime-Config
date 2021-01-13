@@ -1,8 +1,8 @@
-﻿patch:
+patch:
   show_notifications_when: appropriate
   style:
-    candidate_format: " %c %@ "
     color_scheme: google
+    candidate_format: " %c %@ "
     corner_radius: 4
     font_face: "PingFangSC-Regular, 宋体"
     font_point: 14
@@ -10,6 +10,5 @@
     inline_preedit: true
     label_font_point: 14
     layout: {candidate_spacing: 20, hilite_padding: 10, margin_x: 12, margin_y: 12}
-  "style/color_scheme": google
   app_options:
     "Everything/ascii_mode": true
